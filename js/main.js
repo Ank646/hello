@@ -156,22 +156,22 @@ let toggleCamera = async () => {
 
     if(videoTrack.enabled){
         videoTrack.enabled = false
-        document.getElementById('camera-btn').style.backgroundColor = 'blue'
+        document.getElementById('camera-btn').style.backgroundColor = "blue"
     }else{
         videoTrack.enabled = true
-        document.getElementById('camera-btn').style.backgroundColor = 'pink'
+        document.getElementById('camera-btn').style.backgroundColor = "rgba(226, 9, 118, 0.9)"
     }
 }
 
 let toggleMic = async () => {
     let audioTrack = localStream.getTracks().find(track => track.kind === 'audio')
-
+    
     if(audioTrack.enabled){
         audioTrack.enabled = false
-        document.getElementById('mic-btn').style.backgroundColor = 'blue'
+        document.getElementById('mic-btn').style.backgroundColor = "blue"
     }else{
         audioTrack.enabled = true
-        document.getElementById('mic-btn').style.backgroundColor = 'pink'
+        document.getElementById('mic-btn').style.backgroundColor = "rgba(226, 9, 118, 0.9)"
     }
 }
   
